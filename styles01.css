@@ -52,3 +52,7 @@ body {
             text-decoration: none;
             color: #007bff;
         }
+        .container .par{
+                    display: flex;
+                    justify-content: center;
+        }
