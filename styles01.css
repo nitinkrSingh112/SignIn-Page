@@ -53,6 +53,6 @@ body {
             color: #007bff;
         }
         .container .par{
-                    display: flex;
-                    justify-content: center;
+            display: flex;
+            justify-content: center;
         }
