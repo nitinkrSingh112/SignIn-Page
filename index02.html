@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #024a18;
+        }
+        .container .butt{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <div class="butt">
+            <button type="button"  onclick="register()">Register</button>
+            <button type="button"><a href ="logg.html">Back</button></div>
+        </form>
+    </div>
+
+    <script>
+        function register() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password === confirmPassword) {
+                alert(`Registered successfully with Username: ${username}, Email: ${email}`);
+            } else {
+                alert('Passwords do not match!');
+            }
+        }
+    </script>
+</body>
+</html>

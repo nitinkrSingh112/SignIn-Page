@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+        .container .bom{
+            display: flex;
+            justify-content: space-between;
+            gap: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form id="forgot-password-form">
+            <input type="email" id="email" placeholder="Enter Email ID" required >
+            <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+            <div class="bom">
+            <button type="button" onclick="resetPassword()">Reset Password</button>
+            <button type="button"><a href ="logg.html">Back</button></div>
+        </form>
+    </div>
+
+    <script>
+        function resetPassword() {
+            const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+
+            if (email || mobile) {
+                alert('Password reset instructions sent to your email or mobile.');
+            } else {
+                alert('Please provide either an Email ID or a Mobile Number.');
+            }
+        }
+    </script>
+</body>
+</html>

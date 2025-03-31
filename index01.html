@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Login Page</title>
+   <link rel="stylesheet" href="styl.css">
+    <body>
+        <div class="container">
+            <h2>Login Page</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="button" onclick="signIn()">Sign In</button>
+            </form>
+            <div class="links">
+                <a href="reg.html" onclick="register()">Register</a> | 
+                <a href="forgot.html" onclick="forgotPassword()">Forgot Password?</a>
+            </div>
+        </div>
+        <script src="lo.js"></script>
