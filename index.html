@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveller.com</title>
-    <link rel="stylesheet" href="styles012.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles012.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"> Travel-A</div>
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="#">Tours</a>
-                <a href="#">Offers</a>
-                <a href="#">Food</a>
-                <a href="index04.html">Hotel Booking</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="#"> About Us</a>
-            </div>
-            <div class="resister">
-                <a href="index01.html">Log in / Sign Up</a>
-            </div>
-        </nav>
-        <section class="h-txt">
-            <span>Enjoy with us</span>
-            <h1>We are pleased to serve You....</h1>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="index04.html">Hotel Booking</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
 
-            <br>
-            <a href="#"> Book Your Trip</a>
-        </section>
-    </header>
-    <a href="Home">GO TO MAIN MENU</a>
+    <div class="register">
+      <a href="index01.html">Log in / Sign Up</a>
     </div>
 
+    <section class="h-txt">
+      <span>Enjoy with us</span>
+      <h1>We are pleased to serve You</h1>
+      <br />
+      <a href="#">Book Your Trip</a>
+    </section>
+  </header>
+  <div class="movie-slider-container">
+    <div class="movie-slider">
+      <img src="pic1.jpg" alt="ticket booking">
+      <img src="pic2.jpg" alt="tour">
+      <img src="pic3.jpg" alt="food">
+      <img src="pic4.jpg" alt="hotel">
+      <img src="pic5.jpg" alt="travel">
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
